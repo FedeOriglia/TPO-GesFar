@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Farmacia</title>
+  <link rel="stylesheet" type="text/css" href="./css/farmacos.css">
+</head>
+<body>
+  <h1>ABM Farmacos Farmacia</h1>
+  <br><br>
+  <table id="tablaFarmacos">
+    <tr>
+      <th width="133">Código de Barras</th>
+      <th width="325">Nombre</th>
+      <th width="133">Presentación</th>
+      <th width="198">Laboratorio</th>
+      <th width="133">Concentración</th>
+      <th width="133">Lote</th>
+      <th width="133">Stock</th>
+      <th>Fecha de Vencimiento</th>
+    </tr>
+  </table>
+<main>
+   
+</main>
+<br>
+  <button onclick="abrirModal()">Cargar stock</button>
+  <div id="modal" class="modal">
+    <div class="modal-contenido">
+      <span class="cerrar" onclick="cerrarModal()">&times;</span>
+      <h2>Cargar Nuevo Fármaco</h2>
+      <form id="formulario">
+        <label>Código de Barras:</label>
+        <input type="text" id="codigoBarras" required><br>
+        <label>Nombre:</label>
+        <input type="text" id="nombre" required><br>
+        <label>Presentación:</label>
+        <input type="text" id="presentacion" required><br>
+        <label>Concentración:</label>
+        <input type="text" id="concentracion" required><br>
+        <label>Lote:</label>
+        <input type="text" id="lote" required><br>
+        <label>Stock:</label>
+        <input type="number" id="stock" required><br>
+        <label>Fecha de Vencimiento:</label>
+        <input type="date" id="fechaVencimiento" required><br>
+        <input type="submit" value="Guardar">
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/datos.js"></script>
+  <script src="./js/farmacos.js"></script>
+</body>
+</html>

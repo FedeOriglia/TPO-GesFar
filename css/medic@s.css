@@ -1,0 +1,107 @@
+body {
+    background-color: #a2a2a2;
+    font-family: 'Family Font', sans-serif;
+    background-image:url("../img/logo\ blanco.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.left-section {
+    grid-column: 1 / 2;
+}
+
+.right-section {
+    grid-column: 1/2;
+    background-color: #784390;
+    padding: 20px;
+    border: 2px solid #221628;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color:#fff;
+}
+
+input[type="text"], input[type="password"], input[type="numero"]{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #221628;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: 'Family Font', sans-serif;
+}
+
+input[type="submit"], input[type="reset"]{
+    background-color:  #221628;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover  {
+    background-color: #442c50;
+}
+h1{
+text-align: center;
+color: #1c1c1d;
+font-size: 45px;
+font-style: 'Family Font' ;
+font-weight:lighter;
+}
+h2{
+    color: #221628;
+    font-size: 20px;
+    font-style: 'Family Font' ;
+    font-weight:bolder;   
+}
+option{
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #221628;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: 'Family Font', sans-serif;
+    grid-column: 1/2;
+}
+.btn-home {
+    background-color:#442c50;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #221628;
+    cursor: pointer;
+    font-family: 'Family Font', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    grid-column:1/2 ;
+  }
+
+  .btn-home:hover {
+  
+    background-color: #784390;
+  }

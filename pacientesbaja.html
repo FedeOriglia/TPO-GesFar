@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baja Pacientes</title>
+    <link href='https://fonts.googleapis.com/css?family=Monserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/medic@s.css">
+    <link rel="shortcut icon" href="./img/silueta logo.png" />
+  </head>
+<body>
+	<h1>Baja  Pacientes</h1>
+	
+	<form>
+		<label for="dni">DNI del paciente:</label>
+		<input type="text" id="dni" name="dni" required><br><br>
+		
+		<label for="fecha_ingreso">Fecha de ingreso:</label>
+		<input type="text" id="fecha_ingreso" name="fecha_ingreso" value="01/01/2023" readonly><br><br>
+		
+		<label for="fecha_salida">Fecha de salida:</label>
+		<input type="text" id="fecha_salida" name="fecha_salida" placeholder="dd/mm/aaaa"><br><br>
+		
+		<input type="button" value="Dar de baja" onclick="confirmarBaja()">
+	</form>
+	
+	<script>
+		function confirmarBaja() {
+			if (confirm("¿Está seguro de que desea dar de baja al paciente?")) {
+				// aquí iría el código para procesar la baja del paciente
+			}
+		}
+		
+		// establecemos la fecha de hoy como valor por defecto en el campo de fecha de salida
+		document.getElementById("fecha_salida").value = new Date().toLocaleDateString();
+	</script>
+	<div><nav><form action="index.html">
+		<input type="submit" value="Ir a la página principal"></form></nav>
+		</div>
+	  
+</body>
